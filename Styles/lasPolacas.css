@@ -166,3 +166,11 @@ h1::after {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.item {
+  transition: transform 1.5s; 
+}
+
+.item:hover {
+  transform: scale(1.5); 
+}

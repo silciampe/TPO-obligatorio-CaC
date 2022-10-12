@@ -16,7 +16,7 @@ header {
     height: 4em;
     margin-top: 10px;
     /* margin-bottom: 10px; */
-     padding-left: 8%;
+    padding-left: 8%;
     padding-right: 8%;
 
    
@@ -28,13 +28,14 @@ header:hover img{
 a {
    text-decoration:none;
    color: whitesmoke;
-    font-weight:bold;
+   font-weight:bold;
    padding-right: 25px;
-
+   transition-property: color;
+   transition-duration: 2s; 
 }
 
-a:hover{
-    color:yellow;
+a:hover {
+   color:yellow;
 }
 
 .container {
