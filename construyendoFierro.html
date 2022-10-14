@@ -52,4 +52,35 @@
     <img src="img/Construyendo a Fierro/fierro17.jpeg">
     <img src="img/Construyendo a Fierro/fierro18.jpeg">
     </div>
+
+<div id="buttom-up">
+    <i class="fa-sharp fa-solid fa-chevron-up"></i>
 </div>
+</div>
+<script>
+
+    document.getElementById ("buttom-up").addEventListener("click", scrollUp);
+
+    function scrollUp (){
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        
+        if (currentScroll > 0 ) {
+            window.requestAnimationFrame(scrollUp);
+            window.scrollTo (0 , currentScroll - (currentScroll/10) )
+        }
+    }
+
+buttomUp = document.getElementById("buttom-up");
+window.onscroll = function(){
+    var scroll = document.documentElement.scrollTop;
+    if (scroll > 500) {
+       buttomUp.style.transform = "scale(1)"
+    } else if (scroll<500){
+        buttomUp.style.transform = "scale(0)"
+        }
+}
+
+
+</script>
+
+</body>
