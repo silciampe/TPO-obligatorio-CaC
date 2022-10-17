@@ -16,6 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <script defer src="app.js"></script>
+<script defer src="ham.js"></script>
+<script src="https://kit.fontawesome.com/5388f691ef.js" crossorigin="anonymous"></script>
 
 </head> 
 <body>
@@ -28,16 +30,20 @@
             <img class="logo" src="img/logoclaquetaep.png" width=50px height=50px alt="logo El portazo">
         </a>
         <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a><li>
+            <!-- <li><a href="index.html">Inicio</a></li> -->
+            <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="producciones.html">Producciones</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
-        <button class="ham" type="button">
+       <!-- - <button class="ham" type="button">
             <span class="br-1"></span>
             <span class="br-2"></span>
             <span class="br-3"></span>
-        </button>
+        </button>  -->
+
+        <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
     </nav>
 </header>
 
@@ -70,12 +76,16 @@
 <!--FOOTER-->
 
 <footer>
-    <div id="iconos"> 
+    <div class="iconos"> 
         <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
         <a href="https://www.youtube.com/   "><i class="fa-brands fa-youtube"></i></a>
         <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
     </div>
-    <div>El Portazo - Copyright Silvina Ciampechini - Douglas Ojeda - Daniela Patané. &copy; Todos los Derechos Reservados 2022.</div>
+    <div>
+     <p>
+        El Portazo - Copyright <br> Silvina Ciampechini - Douglas Ojeda - Daniela Patané. &copy;<br> Todos los Derechos Reservados 2022.
+    </p>
+    </div>
 </footer>
 
 </body>
