@@ -61,22 +61,20 @@ nav a :hover {
   color: #b7905a;
 }
 
-.ham {
-  /*display: none;*/
-  cursor: pointer;
-  border: none;
-  margin: 0;
-  padding: 0;
+/*MENU HAMBURGUESA*/
+
+.nav-toggle {
+  display: none;
+  color: #fff;
   background-color: transparent;
+  border: none;
+  font-size: 2em;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
 }
-.ham span {
-  display: block;
-  background-color:white;
-  height:3px;
-  width: 28px;
-  margin: 5px auto;
-  border-radius: 2px;
-}
+
+/*GRID*/
   
 .item {
   height: auto;
