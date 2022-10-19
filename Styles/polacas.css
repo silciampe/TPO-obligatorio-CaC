@@ -145,31 +145,13 @@ nav a :hover {
   flex-direction: column;
 }
 
-h1 { 
-  text-decoration-color: #999;
-  padding: 50px;
-  font-size: 54px;
-  font-weight: 700;
-  position: relative;
-
-}
-
-h1::after, h1::before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 5px;
-  background-color: black;
-  bottom: 80px;
-}
-
-h1::before {
-  left: 70px;
-}
-
-
-h1::after {
-  right: 70px;
+.titulo2 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #b7905a;
+  
 }
 
 .imagesContainer {
