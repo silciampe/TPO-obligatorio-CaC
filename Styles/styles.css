@@ -38,10 +38,10 @@ body {
 
 header {
     background-color: #45494e;
-    min-height: 80px;
-    padding-top: 15px;
+    padding-top: 0px;
     overflow: hidden;
     border-bottom: #b7905a 3px solid;
+    height: 13vh;
 }
 
 nav {
@@ -105,7 +105,7 @@ nav a :hover {
     padding-left: 8%;
     padding-right: 8%;
     width: 100%;
-    height: 100vh;
+    height: 76vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/fondo.jpg);
     background-position: center;
@@ -126,7 +126,7 @@ nav a :hover {
 
 h1 {  
     color:#fff;
-    font-size: 100px  
+    font-size: 15vh;  
 }
 
 h1:hover{
@@ -140,8 +140,8 @@ p {
 }
 
 .card {
-    width: 250px;
-    height: 300px;
+    width: 25vw;
+    height: 35vh;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -153,11 +153,13 @@ p {
 }
 
 .serie1 {
-    background-image: url(../img/lasPolacas.jpg)
+    background-image: url(../img/lasPolacas.jpg);
+    background-size:cover;
 }
 
 .serie2 {
     background-image: url(../img/construyendoFierro.jpeg);
+    background-size:cover;
 }
 
 .card:hover {
@@ -278,6 +280,7 @@ footer {
     padding: 2em;
     font-size: 1rem;
     color:black;
+    height: 11vh;
 }
 
 #iconos i {
@@ -445,7 +448,7 @@ footer {
     background-image: url(../img/fierro18.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 89vh;
+   height: 75vh;
     
 }
 
@@ -479,7 +482,7 @@ footer {
     margin: auto;
     overflow:hidden;
     background-color:#292b2d;
-    padding-top:20px;
+    padding-top: 0px;
     margin-top: 5%;
 }
 
@@ -496,7 +499,8 @@ footer {
 }
 
 .form > div {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    line-height: 30px;
 }
 .form input, textarea{
     font-size: 1.25em;
