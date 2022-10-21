@@ -74,6 +74,25 @@ nav a :hover {
   cursor: pointer;
 }
 
+.contenedor {
+  padding-bottom: 50px;
+  background-color: #292b2d;
+}
+
+.titulo2 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #b7905a;
+}
+
+.titulo2 span {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: oblique;
+}
+
 /*GRID*/
   
 .item {
@@ -91,12 +110,11 @@ nav a :hover {
   transform: scale(1.5); 
 }
     
-
-
-.flexContainer {
-  display:flex;
-  text-align: center;
-  flex-direction: column;
+.grid {
+  display: grid;
+  grid-template-columns: [x0] 20% [x1] 60% [x2] 20% [x3];
+  grid-template-rows: [y0] 40% [y1] 40% [y2];
+  background-color: #292b2d;
 }
 
 .a {
@@ -141,13 +159,10 @@ nav a :hover {
     grid-row-end: y1;
 }
 
-.titulo2 {
+.flexContainer {
+  display:flex;
   text-align: center;
-  width: 50%;
-  margin: 0 auto;
-  padding: 1%;
-  background-color: #b7905a;
-  
+  flex-direction: column;
 }
 
 .imagesContainer {
