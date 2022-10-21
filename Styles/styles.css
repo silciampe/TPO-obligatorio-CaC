@@ -38,10 +38,10 @@ body {
 
 header {
     background-color: #45494e;
-    padding-top: 0px;
+    min-height: 80px;
+    padding-top: 15px;
     overflow: hidden;
     border-bottom: #b7905a 3px solid;
-    height: 13vh;
 }
 
 nav {
@@ -105,7 +105,7 @@ nav a :hover {
     padding-left: 8%;
     padding-right: 8%;
     width: 100%;
-    height: 76vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/fondo.jpg);
     background-position: center;
@@ -118,30 +118,25 @@ nav a :hover {
     align-items:center;
 }
 
-.col {
+.row .col {
     flex-basis: 50%;
     display: flex;
     flex-direction: row; 
 }
 
-h1 {  
+.row .col h1 {  
     color:#fff;
-    font-size: 15vh;  
+    font-size: 100px  
 }
 
-h1:hover{
+.row .col h1:hover{
     color: #b7905a;
 }
 
-p {
-    color:#fff;
-    font-size: 18px;
-    line-height: 15px;
-}
 
 .card {
-    width: 25vw;
-    height: 35vh;
+    width: 250px;
+    height: 300px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -153,13 +148,11 @@ p {
 }
 
 .serie1 {
-    background-image: url(../img/lasPolacas.jpg);
-    background-size:cover;
+    background-image: url(../img/lasPolacas.jpg)
 }
 
 .serie2 {
     background-image: url(../img/construyendoFierro.jpeg);
-    background-size:cover;
 }
 
 .card:hover {
@@ -175,7 +168,7 @@ p {
     font-size:20px;
 }
 
-h5 {
+.card h5 {
     display: none;
 }
 
@@ -280,7 +273,6 @@ footer {
     padding: 2em;
     font-size: 1rem;
     color:black;
-    height: 11vh;
 }
 
 #iconos i {
@@ -299,27 +291,49 @@ footer {
 /*ENCABEZADO*/
 
 .page {
-    background-color: black;
-}
-
-.videoFierro {
-    margin-left: 300px;
-    margin-top: -100px;
+    background-color: #292b2d;
 }
 
 
-/*FRAMES */
+
+
+/*IFRAMES*/
 
 .iframesContainer {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     border-radius:50px;
 }
 
-.iframesContainer iframe {
-    padding-top: 200px;
-    padding: auto;
-    padding-left: 100px;
+
+.cuadro iframe {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.videoFierro {
+    margin-left: 100px;
+    
+}
+
+.iframesContainer .tema {
+    padding-top: 80px;
+    padding-left: 300px;
+    margin-right:50px;
+}
+
+.tema p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.boton-pdf {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.5em;
+    background-color:#b7905a;
+    border-radius: 16px;
+    padding: 5px 12px;
 }
 
 /*IMAGENES */
@@ -329,7 +343,8 @@ footer {
     flex-direction:column;
     padding: 0px 15px;
     margin: 100px 0px;
-    gap: 20px;  
+    gap: 20px;
+    
 }
  
 .imagenes img {
@@ -348,7 +363,7 @@ footer {
     border-radius: 50%;
     font-size: 20px;
     position: fixed;
-    bottom: 100px;
+    bottom: 11%;
     right: 100px;
     cursor: pointer;
     border: 4px solid transparent;
@@ -375,69 +390,134 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: black;
+    background-color:#63b8ab;
 }
   
-.contenedor h1 {
-      color: white;
-      padding-top: 80px;
-      text-align: center;
-      font-family: 'Abril Fatface', cursive;
-      font-family: 'Dangrek', cursive;
-      font-family: 'Raleway', sans-serif;
-      font-size: 100px;
-}
-  
-.contenedor h2 {
-      padding: 80px;
-      text-align: center;
-      color: white;
-}
-  
-.nosotros {
-    margin: 20px 40px;
-    border-radius: 30px;
-    width: 90%;
-}
-  
-.gente {
-    display: flex;
+#nosotros .contenido {
     width: 100%;
-    gap: 20px;
-    padding: 40px 10px;
-    justify-content: space-between;
+    background:#63b8ab;
     text-align: center;
+    min-height:70vh;
 }
-  
-.persona {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    text-align: center;
-    width: 17%; 
-    color: white
-  }
-  
-.imagen {
-      border-radius: 20px;
+
+#nosotros .nosotros {
+    display: inline-flex;
+    max-width: 1300px;
+    margin: auto;
+    top: -50px;
+    padding:0px 20px 10px 20px;
+}
+
+#nosotros .somos {
+    padding-left: 20px;
+    padding-right: 40px;
+    float: left;
+    width: 50%;
+}
+
+#nosotros .somos .text{
+    line-height:1.1em;
+    font-size:18px;
+    color:#fff;
+    text-align: justify;
+}
+
+#nosotros .somos .text p {
+    margin-bottom: 15px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   
+}
+
+#nosotros h4 {
+    font-size: 30px;
+    margin-bottom:40px;
+    color:#fff;
+    text-align:start;
+    font-weight:normal;
+}
+
+
+.directores {
+    padding-left: 20px;
+    float: left;
+    width: 50%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.somos img {
+    width:300px;
+    height:200px;
+    border-radius: 10px;
+}
+
+.box {
+    width: 50%;
+    padding: 6px;
+    float: left;
+    box-sizing: border-box;
+    text-align:left;
+}
+
+.box .vertical-align-wrap {
+    width: 100%;
+    height: 100%;
+    display: table;
+    padding: 20px;
+    background:#549d92;
+    box-sizing: border-box;
+}
+
+.vertical-align-wrap .vertical-align {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.vertical-align h5 {
+    color: #000;
+    font-size: 32px;
+    line-height: 28px;
+    margin: 0px;
+}
+
+.vertical-align span {
+    
+    color: #fff;
+    font-size: 20px;
 }
 
 /*PRODUCCIONES*/
 
 .contenedor-flex-3 {
+    background-color:#8ebac1;
+    min-height: 80vh;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: nowrap; 
+}
+
+
+
+/*PRODUCCIONES*/
+
+/*.contenedor-flex-3 {
     background-color:#76c7ef;
     min-height: 80vh;
     width: 100%;
-    padding: 40px 10px;
+    padding: 0;
     justify-content: space-between;
     text-align: center;
-}
+}*/
 
 .producciones {
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
     margin-top: 80px;
-
 }
 
 /*CONTACTO*/
@@ -448,7 +528,7 @@ footer {
     background-image: url(../img/fierro18.jpg);
     background-position: center;
     background-size: cover;
-   height: 75vh;
+    min-height: 80vh;
     
 }
 
@@ -482,7 +562,7 @@ footer {
     margin: auto;
     overflow:hidden;
     background-color:#292b2d;
-    padding-top: 0px;
+    padding-top:20px;
     margin-top: 5%;
 }
 
@@ -499,8 +579,7 @@ footer {
 }
 
 .form > div {
-    /* padding-bottom: 20px; */
-    line-height: 30px;
+    padding-bottom: 20px;
 }
 .form input, textarea{
     font-size: 1.25em;
