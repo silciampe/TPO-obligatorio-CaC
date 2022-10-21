@@ -91,10 +91,12 @@ nav a :hover {
   transform: scale(1.5); 
 }
     
-.grid {
-  display: grid;
-  grid-template-columns: [x0] 20% [x1] 60% [x2] 20% [x3];
-  grid-template-rows: [y0] 40% [y1] 40% [y2];
+
+
+.flexContainer {
+  display:flex;
+  text-align: center;
+  flex-direction: column;
 }
 
 .a {
@@ -137,12 +139,6 @@ nav a :hover {
     grid-column-end: x2;
     grid-row-start: y0;
     grid-row-end: y1;
-}
-
-.flexContainer {
-  display:flex;
-  text-align: center;
-  flex-direction: column;
 }
 
 .titulo2 {
@@ -204,15 +200,10 @@ nav a :hover {
     padding-left: 200px;
 }
 
-footer {
-  display: flex;
-  align-items:center;
-  justify-content:space-around;
-  font-style:normal;
-  background-color: #999;
-  padding: 2em;
-  font-size: 1rem;
-  color:black;
+.grid {
+  display: grid;
+  grid-template-columns: [x0] 20% [x1] 60% [x2] 20% [x3];
+  grid-template-rows: [y0] 40% [y1] 40% [y2];
 }
 
 #iconos i {
@@ -225,3 +216,13 @@ footer {
   color:#4d5155;
 }
 
+footer {
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  font-style:normal;
+  background-color: #999;
+  padding: 2em;
+  font-size: 1rem;
+  color:black;
+}
