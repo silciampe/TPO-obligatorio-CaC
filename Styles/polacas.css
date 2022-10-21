@@ -215,10 +215,15 @@ nav a :hover {
     padding-left: 200px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: [x0] 20% [x1] 60% [x2] 20% [x3];
-  grid-template-rows: [y0] 40% [y1] 40% [y2];
+footer {
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  font-style:normal;
+  background-color: #999;
+  padding: 2em;
+  font-size: 1rem;
+  color:black;
 }
 
 #iconos i {
@@ -231,13 +236,3 @@ nav a :hover {
   color:#4d5155;
 }
 
-footer {
-  display: flex;
-  align-items:center;
-  justify-content:space-around;
-  font-style:normal;
-  background-color: #999;
-  padding: 2em;
-  font-size: 1rem;
-  color:black;
-}
