@@ -105,10 +105,10 @@ nav a :hover {
   flex-direction: row;
   justify-content: space-evenly;
   box-sizing: border-box;
-  /* padding-left: 8%;
-    padding-right: 8%; */
+  padding-left: 8%;
+  padding-right: 8%;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/fondo.jpg);
   background-position: center;
@@ -122,22 +122,15 @@ nav a :hover {
   width: 100%;
 }
 
-.row .c1 {
+.row .col {
   flex-basis: 50%;
   display: flex;
-  justify-content: center;
-}
-.row .c2 {
-  flex-basis: 50%;
-  display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
 
 .row .col h1 {
   color: #fff;
-  font-size: 12vh;
-  padding: 30px;
+  font-size: 100px;
 }
 
 .row .col h1:hover {
@@ -145,8 +138,8 @@ nav a :hover {
 }
 
 .card {
-  width: 20vw;
-  height: 35vh;
+  width: 250px;
+  height: 300px;
   display: inline-block;
   border-radius: 10px;
   padding: 15px 25px;
@@ -159,20 +152,19 @@ nav a :hover {
 
 .serie1 {
   background-image: url(../img/lasPolacas.jpg);
-  background-size: 20vw 35vh;
+  
 }
 
 .serie2 {
   background-image: url(../img/construyendoFierro.jpeg);
-  background-size: 20vw 35vh;
+  
 }
 
 .card:hover {
   transform: translate(10px);
 }
 
-.serie1:hover h5,
-.serie2:hover h5 {
+.serie1:hover h5,.serie2:hover h5 {
   display: block;
   color: #efbd76;
   text-shadow: 0 0 5px #999;
@@ -225,6 +217,10 @@ nav a :hover {
     padding: 0;
   }
 
+  .card:hover {
+    box-shadow: 0 4px 4px 0 #b7905a;
+  }
+
   .serie1 {
     background-size: cover;
   }
@@ -259,9 +255,7 @@ nav a :hover {
   .nav-toggle {
     display: block;
   }
-  footer .copyright {
-    width: 50%;
-  }
+  
 }
 
 /*MOVIL: IPHONE 12PRO*/
@@ -291,7 +285,7 @@ nav a :hover {
     flex-basis: 80%;
   }
   .contenedor-flex-2 {
-    height: 80vh;
+    height: 75vh;
   }
   .col a {
     padding: 0;
@@ -301,6 +295,9 @@ nav a :hover {
     width: 200px;
     height: 200px;
     padding: 0;
+  }
+  .card:hover {
+    box-shadow: 0 4px 4px 0 #b7905a;
   }
 
   .serie1 {
@@ -337,9 +334,7 @@ nav a :hover {
   .nav-toggle {
     display: block;
   }
-  footer .copyright {
-    width: 50%;
-  }
+  
 }
 
 /*FOOTER */
@@ -445,7 +440,7 @@ footer {
 
 #buttom-up:hover {
   transform: scale(1.1);
-  border-color: black;
+  border-color:#45494e;
 }
 
 /*POLACAS */
@@ -468,7 +463,7 @@ footer {
   width: 100%;
   background: #63b8ab;
   text-align: center;
-  min-height: 70vh;
+  min-height: 72vh;
 }
 
 #nosotros .nosotros {
@@ -688,10 +683,10 @@ textarea {
 
 /* Pagina en Construccion */
 .contenedor-construccion {
-  background-image: url(/img/pagina-en-construcción4.png);
+  background-image: url(/TPO-obligatorio-CaC/img/construccion.png);
   background-color:black;
   background-size:80%;
   background-repeat: no-repeat;
   background-position:center;
-  height: 78vh;
+  height: 80vh;
 }
