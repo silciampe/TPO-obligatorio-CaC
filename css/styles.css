@@ -683,7 +683,7 @@ textarea {
 
 /* Pagina en Construccion */
 .contenedor-construccion {
-  background-image: url(/TPO-obligatorio-CaC/img/construccion.png);
+  background-image: url(../img/construccion.png);
   background-color:black;
   background-size:80%;
   background-repeat: no-repeat;
