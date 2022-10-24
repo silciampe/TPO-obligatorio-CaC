@@ -152,19 +152,18 @@ nav a :hover {
 
 .serie1 {
   background-image: url(../img/lasPolacas.jpg);
-  
 }
 
 .serie2 {
   background-image: url(../img/construyendoFierro.jpeg);
-  
 }
 
 .card:hover {
   transform: translate(10px);
 }
 
-.serie1:hover h5,.serie2:hover h5 {
+.serie1:hover h5,
+.serie2:hover h5 {
   display: block;
   color: #efbd76;
   text-shadow: 0 0 5px #999;
@@ -180,7 +179,7 @@ nav a :hover {
 
 /*TABLET: IPAD AIR*/
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1000px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -205,15 +204,15 @@ nav a :hover {
     flex-basis: 80%;
   }
   .contenedor-flex-2 {
-    height: 83vh;
+    height: 85vh;
   }
   .col a {
     padding: 0;
   }
 
   .card {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding: 0;
   }
 
@@ -255,12 +254,20 @@ nav a :hover {
   .nav-toggle {
     display: block;
   }
+
+  .copyright {
+    width: 60vw;
+
+  font-size: 1rem;
+    
+  }
+
   
 }
 
 /*MOVIL: IPHONE 12PRO*/
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 750px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -285,7 +292,7 @@ nav a :hover {
     flex-basis: 80%;
   }
   .contenedor-flex-2 {
-    height: 75vh;
+    height: 78vh;
   }
   .col a {
     padding: 0;
@@ -334,7 +341,14 @@ nav a :hover {
   .nav-toggle {
     display: block;
   }
-  
+
+  .copyright {
+    width: 50vw;
+ 
+  font-size: 0.8rem;
+    
+  }
+
 }
 
 /*FOOTER */
@@ -440,7 +454,7 @@ footer {
 
 #buttom-up:hover {
   transform: scale(1.1);
-  border-color:#45494e;
+  border-color: #45494e;
 }
 
 /*POLACAS */
@@ -684,9 +698,9 @@ textarea {
 /* Pagina en Construccion */
 .contenedor-construccion {
   background-image: url(../img/construccion.png);
-  background-color:black;
-  background-size:80%;
+  background-color: black;
+  background-size: 80%;
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   height: 80vh;
 }
