@@ -180,12 +180,20 @@ nav a :hover {
 /*TABLET: IPAD AIR*/
 
 @media screen and (max-width: 1000px) {
+
+  header{
+    position: fixed;
+    width: 100%;
+  }
   .row {
     display: flex;
     flex-direction: column;
+    margin-top: 120px;
+
+
   }
   .row .col h1 {
-    font-size: 120px;
+    font-size: 100px;
     padding: 0;
     margin: 0;
   }
@@ -204,15 +212,15 @@ nav a :hover {
     flex-basis: 80%;
   }
   .contenedor-flex-2 {
-    height: 82vh;
+    height: 89vh;
   }
   .col a {
     padding: 0;
   }
 
   .card {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     padding: 0;
   }
 
@@ -268,9 +276,14 @@ nav a :hover {
 /*MOVIL: IPHONE 12PRO*/
 
 @media screen and (max-width: 750px) {
+  header{
+    position: fixed;
+    width: 100%;
+  }
   .row {
     display: flex;
     flex-direction: column;
+    
   }
   .row .col h1 {
     font-size: 60px;
@@ -292,7 +305,10 @@ nav a :hover {
     flex-basis: 80%;
   }
   .contenedor-flex-2 {
-    height: 78vh;
+    height: 88vh;
+   
+    
+   
   }
   .col a {
     padding: 0;
