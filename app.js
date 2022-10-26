@@ -1,7 +1,7 @@
 //FIERRO
     //BOTON
 
-    document.getElementById ("buttom-up").addEventListener("click", scrollUp);
+document.getElementById ("buttom-up").addEventListener("click", scrollUp);
 
 function scrollUp (){
    
