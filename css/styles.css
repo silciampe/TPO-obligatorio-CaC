@@ -398,6 +398,7 @@ p {
 
 .imagenes img {
   border-radius: 50px;
+  max-width: 100%;
 }
 
 /*BOTON */
@@ -556,7 +557,7 @@ p {
 }
 
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 992px) {
 
   header .logo{
     width: 40px;
@@ -594,12 +595,6 @@ p {
     padding: 0;
   }
 
-  .card {
-    width: 300px;
-    height: 300px;
-    padding: 0;
-  }
-
   .card:hover {
     box-shadow: 0 4px 4px 0 #b7905a;
   }
@@ -626,8 +621,8 @@ p {
     z-index: 1;
   }
   .menu li {
-    margin-top: 80px;
-    padding: 40px;
+    margin-top: 20px;
+    padding: 10px;
   }
   .menu li a {
     font-size: 3em;
@@ -712,8 +707,7 @@ p {
 
 /*MOVIL: IPHONE 12PRO*/
 
-@media screen and (max-width: 390px) {
- 
+@media screen and (max-width: 600px) {
 
   header .logo{
     width: 40px;
@@ -721,51 +715,49 @@ p {
   }
 
   /*INDEX*/
+
+  .contenedor-flex-2 {
+    height:70vh;
+  }
   .row {
     display: flex;
     flex-direction: column;
   }
-  .row .col h1 {
-    font-size: 60px;
-    padding: 0;
-    margin: 0;
-  }
-  .row .c1 {
-    display: flex;
-    align-items: center;
-    flex-basis: 20%;
-  }
 
-  .row .c2 {
+  .row .col {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    flex-basis: 80%;
-  }
-  .contenedor-flex-2 {
-    height: 75vh;
-  }
-  .col a {
-    padding: 0;
   }
 
+  .row .col h1 {
+    font-size: 60px;
+   
+  }
+  .row .col h1:hover {
+    color: #b7905a;
+  }
   .card {
-    width: 200px;
-    height: 200px;
-    padding: 0;
-  }
-  .card:hover {
-    box-shadow: 0 4px 4px 0 #b7905a;
+    width: 125px;
+    height: 150px;
+    display: flex;
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-size: cover;
+    transition: transform 1s;
   }
 
-  .serie1 {
-    background-size: cover;
+  .serie1:hover h5,.serie2:hover h5 {
+    display: block;
+    color: #efbd76;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+    font-size: 10px;
   }
-  .serie2 {
-    background-size: cover;
-  }
+  
+
   .menu {
     flex-direction: column;
     align-items: center;
@@ -782,8 +774,8 @@ p {
     z-index: 1;
   }
   .menu li {
-    margin-top: 80px;
-    padding: 40px;
+    margin-top: 20px;
+    padding: 10px;
   }
   .menu li a {
     font-size: 2em;
@@ -819,6 +811,8 @@ p {
 
   /*NOSOTROS*/
 
+  
+
   .nosotros {
     flex-direction: column;
     align-items: center;
@@ -831,7 +825,13 @@ p {
     padding: 0;
   }
   .box {
+    
     width: 100%;
+  }
+
+  .vertical-align-wrap {
+    display:flex;
+    flex-direction: column;
   }
 
   .vertical-align h5{
@@ -845,16 +845,19 @@ p {
     text-align: center;
   }
 
-  
+   /*FIERRO*/
+
   .iframesContainer .tema {
     padding-left:20%;
+  }
+  .imagenes img {
+    border-radius: 15px;
   }
 
  /*CONTACTO*/
 
-  .formulario {
-    width:60%;
-  }
+  
+
   .espacio {
     height:75vh;
   }
