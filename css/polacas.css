@@ -113,7 +113,7 @@ nav a :hover {
 .grid {
   display: grid;
   grid-template-columns: [x0] 20% [x1] 60% [x2] 20% [x3];
-  grid-template-rows: [y0] 20% [y1] 20% [y2];
+  grid-template-rows: [y0] 30% [y1] 30% [y2];
   background-color: #292b2d;
 }
 
@@ -156,7 +156,7 @@ nav a :hover {
     grid-column-start: x1;
     grid-column-end: x2;
     grid-row-start: y0;
-    grid-row-end: y1;
+    grid-row-end: y2;
 }
 
 .flexContainer {
@@ -241,7 +241,7 @@ footer {
   color: #efbd76;
 } 
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 992px) {
   header .logo{
     width: 40px;
     height: 40px;
@@ -263,8 +263,8 @@ footer {
     z-index: 1;
   }
   .menu li {
-    margin-top: 80px;
-    padding: 40px;
+    margin-top: 20px;
+    padding: 10px;
   }
   .menu li a {
     font-size: 3em;
@@ -284,10 +284,17 @@ footer {
     width: 60vw;
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: [x0] 20% [x1] 60% [x2] 20% [x3];
+    grid-template-rows: [y0] 18% [y1] 18% [y2];
+    background-color: #292b2d;
+  }
+
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
 
   header .logo{
     width: 40px;
@@ -309,8 +316,8 @@ footer {
     z-index: 1;
   }
   .menu li {
-    margin-top: 80px;
-    padding: 40px;
+    margin-top: 20px;
+    padding: 10px;
   }
   .menu li a {
     font-size: 2em;
