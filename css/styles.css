@@ -873,8 +873,19 @@ p {
   }
 
  /*CONTACTO*/
+ .formulario {
+   padding: 0;
+ }
 
-  
+ .formulario h3 {
+   font-size:1.25em;
+ }
+ .form input,textarea {
+  font-size: 1em;
+ }
+ .boton {
+   font-size:1em;
+ }
 
   .espacio {
     height:75vh;
